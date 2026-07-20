@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="rmuc_2026">
+    <static>true</static>
+
+    <link name="body">
+      <!-- 这里 pose 是模型内部偏移；一般建议先 0 0 0，位置放到 world 里控制 -->
+      <pose>0 0 0 0 0 0</pose>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://rmuc_2026/meshes/rmuc_2026.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+        </material>
+      </visual>
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://rmuc_2026/meshes/rmuc_2026.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

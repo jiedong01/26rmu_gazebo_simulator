@@ -1,3 +1,23 @@
+# 26rmu_gazebo_simulator
+
+## 26 赛季更新说明
+
+本仓库在 [SMBU-PolarBear-Robotics-Team/rmu_gazebo_simulator](https://github.com/SMBU-PolarBear-Robotics-Team/rmu_gazebo_simulator) 基础上，新增了 RoboMaster University 2026 赛季仿真场地支持。
+
+### 新增内容
+
+- rmul_2026 仿真世界模型
+- rmuc_2026 仿真世界模型
+
+### 切换至 26 赛季仿真世界
+
+修改 [gz_world.yaml](./rmu_gazebo_simulator/config/gz_world.yaml) 中的 `world` 字段：
+
+- RMUL 2026：`world: "rmul_2026"`
+- RMUC 2026：`world: "rmuc_2026"`
+
+---
+
 # rmu_gazebo_simulator
 
 ## 1. Introduction
@@ -6,7 +26,7 @@ rmu_gazebo_simulator 是基于 Gazebo (Ignition 字母版本) 的仿真环境，
 
 目前 rmu_gazebo_simulator 提供以下功能：
 
-- rmul_2024, rmuc_2024, rmul_2025, rmuc_2025 仿真世界模型
+- rmul_2024, rmuc_2024, rmul_2025, rmuc_2025, rmul_2026, rmuc_2026 仿真世界模型
 
 - 网页端局域网联机对战
 
@@ -65,7 +85,7 @@ cd ~/ros_ws
 ```
 
 ```bash
-git clone https://github.com/SMBU-PolarBear-Robotics-Team/rmu_gazebo_simulator.git src/rmu_gazebo_simulator
+git clone https://github.com/jiedong01/26rmu_gazebo_simulator.git src/rmu_gazebo_simulator
 ```
 
 ```bash
@@ -138,7 +158,7 @@ python3 src/rmu_gazebo_simulator/rmu_gazebo_simulator/scripts/referee_web/main.p
 
 #### 2.3.3 切换仿真世界
 
-修改 [gz_world.yaml](./rmu_gazebo_simulator/config/gz_world.yaml) 中的 `world`。当前可选: `rmul_2024`, `rmuc_2024`, `rmul_2025`, `rmuc_2025`
+修改 [gz_world.yaml](./rmu_gazebo_simulator/config/gz_world.yaml) 中的 `world`。当前可选: `rmul_2024`, `rmuc_2024`, `rmul_2025`, `rmuc_2025`, `rmul_2026`, `rmuc_2026`
 
 ## 配套导航仿真仓库
 
