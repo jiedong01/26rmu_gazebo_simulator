@@ -3,7 +3,7 @@
 ## 26 赛季更新说明
 
 本仓库在 [SMBU-PolarBear-Robotics-Team/rmu_gazebo_simulator](https://github.com/SMBU-PolarBear-Robotics-Team/rmu_gazebo_simulator) 基础上，新增了 RoboMaster University 2026 赛季仿真场地支持。可能仍有完善的地方，望多多pr
-r
+
 ### 新增内容
 
 - rmul_2026 仿真世界模型
